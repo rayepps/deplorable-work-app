@@ -100,11 +100,7 @@ export default function HomeScene() {
           size={500}
           lineHeight='1.8em'
         >
-          This platform is not about left or right. Really, it's not political. It's
-          about values. Sadly, today, these two things are in conflict. Companies
-          hold employee's they trust in the highest regard. Employees can do their
-          best work in a safe and supportive environment. Leadership, structure, and
-          communication plat a role but they are applied after core values.
+          This platform is not about left or right. Really, it's not political at all. It's about values. Sadly, today, these two things are in conflict. Companies hold employees they trust in the highest regard. Employees can do their best work when they trust the leadership to have their back. Without shared values, there is no trust.
         </Paragraph>
         <Pane marginTop={majorScale(4)}>
           <Link href="/post-job" passHref>
@@ -151,9 +147,7 @@ export default function HomeScene() {
           lineHeight='1.8em'
           size={500}
         >
-          The fundamentals are personal liberty, self responsibility, and the freedom of
-          speech. Here are some indications that are specific and relevant to the current
-          climate in our world...
+          We value personal liberty, self-responsibility, and freedom of speech. Below is a more specific list that's relevant to the current climate.
         </Paragraph>
         <ValuesChart
           marginTop={majorScale(4)}
@@ -206,7 +200,7 @@ const ValuesChart = (props: t.ArgumentTypes<typeof Axis>[0]) => {
           <ValuesBox
             icon={<HiCheck color={theme.colors.success} />}
             label={`
-              You can do life with people you don't agree with, having
+              You can do life with people you disagree with, having
               respect for them and their opinions.
             `}
           />
@@ -226,25 +220,19 @@ const ValuesChart = (props: t.ArgumentTypes<typeof Axis>[0]) => {
           <ValuesBox
             icon={<HiMinus color={theme.colors.grey200} />}
             label={`
-              Your party association (i.e. Republican, Democrat, Libertarian)
+              Your political party association (Republican, Democrat, Libertarian).
             `}
           />
           <ValuesBox
             icon={<HiMinus color={theme.colors.grey200} />}
             label={`
-              Your COVID vaccination status
+              Your COVID vaccination status.
             `}
           />
           <ValuesBox
             icon={<HiMinus color={theme.colors.grey200} />}
             label={`
-              Your race, ethnicity, sex, or religion
-            `}
-          />
-          <ValuesBox
-            icon={<HiMinus color={theme.colors.grey200} />}
-            label={`
-              Your work experience, skill set, or industry
+              Your race, ethnicity, sex, or religion.
             `}
           />
         </Pane>
@@ -263,7 +251,7 @@ const ValuesChart = (props: t.ArgumentTypes<typeof Axis>[0]) => {
           <ValuesBox
             icon={<HiX color={theme.colors.danger} />}
             label={`
-              You believe diversity or inclusion officers are a key position of any company.
+              You believe diversity or inclusion officers are key positions in a company.
             `}
           />
           <ValuesBox
@@ -275,13 +263,15 @@ const ValuesChart = (props: t.ArgumentTypes<typeof Axis>[0]) => {
           <ValuesBox
             icon={<HiX color={theme.colors.danger} />}
             label={`
-              You believe half the US population is made up of hateful, racist, right wing bigots.
+              You believe half the population are hateful, 
+              racist, right wing bigots.
             `}
           />
           <ValuesBox
             icon={<HiX color={theme.colors.danger} />}
             label={`
-              You believe half the US population is made up of stupid, lazy, far left ideologues.
+              You believe half the population are stupid, 
+              lazy, far left ideologues.
             `}
           />
         </Pane>

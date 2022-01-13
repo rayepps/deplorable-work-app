@@ -5,6 +5,4 @@ const config = {
   apiUrl: process.env.NEXT_PUBLIC_API_URL!
 }
 
-console.log(config)
-
 export default config
