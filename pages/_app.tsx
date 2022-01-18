@@ -21,10 +21,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta content="Find work and post openings in a community that shares your deplorable values." name="description" />
         <meta content="Deplorable Jobs" property="og:title" />
         <meta content="Find work and post openings in a community that shares your deplorable values." property="og:description" />
-        <meta content="/preview.png" property="og:image" />
+        <meta content="https://deplorable.work/preview.png" property="og:image" />
         <meta content="Deplorable Jobs" property="twitter:title" />
         <meta content="Find work and post openings in a community that shares your deplorable values." property="twitter:description" />
-        <meta content="/preview.png" property="twitter:image" />
+        <meta content="https://deplorable.work/preview.png" property="twitter:image" />
         <meta property="og:type" content="website" />
         <meta content="summary_large_image" name="twitter:card" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
