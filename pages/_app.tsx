@@ -26,7 +26,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta content="Find work and post openings in a community that shares your deplorable values." property="twitter:description" />
         <meta content="https://deplorable.work/preview.png" property="twitter:image" />
         <meta property="og:type" content="website" />
-        <meta content="summary_large_image" name="twitter:card" />
+        <meta content="@repsofsunshine" name="twitter:creator" />
+        <meta content="Find work and post openings in a community that shares your deplorable values." name="twitter:card" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
