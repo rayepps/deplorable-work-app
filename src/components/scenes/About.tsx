@@ -101,7 +101,7 @@ export default function AboutScene() {
           lineHeight='1.8em'
         >
           This platform is not about left or right. Really, it's not political at all. 
-          It's about values. Sadly, today, these things are in conflated. We cannot
+          It's about values. Sadly, today, these things have been conflated. We cannot
           assume our employer, employee, or even neighboor share our fundamental values.
           This leads to a hanging fear that a job could be lost. In many cases, when
           non-woke values are expressed, the job is lost. No more. Find employers and
