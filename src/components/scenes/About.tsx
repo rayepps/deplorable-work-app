@@ -17,14 +17,14 @@ import { HiCheck, HiMinus, HiX } from 'react-icons/hi'
 import { useBreakpoint } from 'src/hooks'
 
 
-export default function HomeScene() {
+export default function AboutScene() {
 
   const bp = useBreakpoint()
 
   return (
     <>
       <Header />
-      <Center
+      {/* <Center
         minHeight='calc(100vh - 50px)'
         backgroundImage={bp.at('medium', 'up') ? 'url("/star-circle.png")' : undefined}
         backgroundRepeat='no-repeat'
@@ -81,7 +81,7 @@ export default function HomeScene() {
             </Link>
           </Pane>
         </Center>
-      </Center>
+      </Center> */}
       <Pane
         paddingY={majorScale(20)}
         paddingX={bp.at('medium', 'up') ? majorScale(10) : majorScale(4)}
@@ -100,7 +100,12 @@ export default function HomeScene() {
           size={500}
           lineHeight='1.8em'
         >
-          This platform is not about left or right. Really, it's not political at all. It's about values. Sadly, today, these two things are in conflict. Companies hold employees they trust in the highest regard. Employees can do their best work when they trust the leadership to have their back. Without shared values, there is no trust.
+          This platform is not about left or right. Really, it's not political at all. 
+          It's about values. Sadly, today, these things are in conflated. We cannot
+          assume our employer, employee, or even neighboor share our fundamental values.
+          This leads to a hanging fear that a job could be lost. In many cases, when
+          non-woke values are expressed, the job is lost. No more. Find employers and
+          employees you share those values with here.
         </Paragraph>
         <Pane marginTop={majorScale(4)}>
           <Link href="/post-job" passHref>

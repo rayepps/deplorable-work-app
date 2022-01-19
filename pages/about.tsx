@@ -1,16 +1,16 @@
 import type { NextPage, NextPageContext } from 'next'
 import Head from 'next/head'
-import JobsScene from '../src/components/scenes/Jobs'
+import AboutScene from '../src/components/scenes/About'
 
-const Index: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>Deplorable Work</title>
       </Head>
-      <JobsScene />
+      <AboutScene />
     </>
   )
 }
 
-export default Index
+export default Home

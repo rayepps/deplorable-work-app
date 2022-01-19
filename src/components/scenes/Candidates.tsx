@@ -25,7 +25,7 @@ import WorkerGrid from 'src/components/ui/WorkerGrid'
 import api from 'src/api'
 import WorkerDetailCard from 'src/components/ui/WorkerDetailCard'
 import Modal from 'src/components/ui/Modal'
-import { HiOutlineEye } from 'react-icons/hi'
+import { HiArrowRight } from 'react-icons/hi'
 
 
 export default function CandidatesScene() {
@@ -83,7 +83,7 @@ export default function CandidatesScene() {
           width='100%'
           maxWidth={800}
         >
-          <Pane marginBottom={majorScale(2)}>
+          <Pane marginBottom={majorScale(4)}>
             <Split alignItems='center' marginBottom={majorScale(2)}>
               <Heading
                 flex={1}
@@ -112,12 +112,27 @@ export default function CandidatesScene() {
               size={500}
               lineHeight='1.8em'
             >
-              If you're new here be sure to check out our home page and values. If you share
-              our values and you're looking for a new position please post your own profile, its free!
+              If you're new here be sure to check out our values. If you share
+              our values and you're looking for a new position please post your 
+              own profile, its free!
             </Paragraph>
+            <Pane marginTop={majorScale(1)}>
+              <Link href='/about' passHref>
+                <EvergreenLink
+                  size={400}
+                  fontWeight={600}
+                  display='flex'
+                  alignItems='center'
+                  cursor='pointer'
+                >
+                  View Values
+                  <HiArrowRight style={{ marginLeft: majorScale(1) }} />
+                </EvergreenLink>
+              </Link>
+            </Pane>
           </Pane>
-          <WorkerGrid 
-            workers={_.sort(workers, w => new Date(w.createdAt).getTime(), true)} 
+          <WorkerGrid
+            workers={_.sort(workers, w => new Date(w.createdAt).getTime(), true)}
             onView={setSelectedWorker}
           />
           <div

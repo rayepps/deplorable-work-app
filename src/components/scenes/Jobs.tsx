@@ -23,6 +23,7 @@ import JobListItem from 'src/components/ui/JobListItem'
 import JobDetailCard from 'src/components/ui/JobDetailCard'
 import Modal from 'src/components/ui/Modal'
 import api from 'src/api'
+import { HiArrowRight } from 'react-icons/hi'
 
 
 export default function JobsScene() {
@@ -64,7 +65,7 @@ export default function JobsScene() {
 
   return (
     <>
-      <Modal 
+      <Modal
         open={!!selectedJob}
         title={selectedJob?.company?.name}
         onClose={() => setSelectedJob(null)}
@@ -80,7 +81,7 @@ export default function JobsScene() {
           width='100%'
           maxWidth={800}
         >
-          <Pane marginBottom={majorScale(2)}>
+          <Pane marginBottom={majorScale(4)}>
             <Split alignItems='center' marginBottom={majorScale(2)}>
               <Heading
                 flex={1}
@@ -88,7 +89,7 @@ export default function JobsScene() {
                 fontSize='36px'
                 fontFamily={theme.fonts.vollkorn}
               >
-                Job Openings
+                Deplorable Job Openings
               </Heading>
               <Link href='/post-job' passHref>
                 <EvergreenLink
@@ -109,9 +110,23 @@ export default function JobsScene() {
               size={500}
               lineHeight='1.8em'
             >
-              If you're new here be sure to check out our home page and values. If you're a company that shares
+              If you're new here be sure to check out our values. If you're a company that shares
               our values please post your jobs, its free!
             </Paragraph>
+            <Pane marginTop={majorScale(1)}>
+              <Link href='/about' passHref>
+                <EvergreenLink
+                  size={400}
+                  fontWeight={600}
+                  display='flex'
+                  alignItems='center'
+                  cursor='pointer'
+                >
+                  View Values
+                  <HiArrowRight style={{ marginLeft: majorScale(1) }} />
+                </EvergreenLink>
+              </Link>
+            </Pane>
           </Pane>
           <Pane>
             {_.sort(jobs, j => new Date(j.createdAt).getTime(), true).map(job => (
